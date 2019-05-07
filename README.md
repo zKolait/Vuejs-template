@@ -1,4 +1,4 @@
-# pixelwars
+# Vuejs-template
 
 ## Project setup
 ```
