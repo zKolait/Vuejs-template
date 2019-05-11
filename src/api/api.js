@@ -30,13 +30,5 @@ export default {
                 'X-Requested-With': 'XMLHttpRequest'
             }
         })
-    },
-    server: {
-        getServers: () => axios.get('/servers/'),
-        getServer: (id) => axios.get('/servers/' + id),
-        add: (data) => axios.post('/servers', data),
-        remove: (id) => axios.delete('/servers/' + id),
-        reset: (id) => axios.get('/servers/' + id + '/reset'),
-        changeStatus: (id) => axios.patch('/servers/' + id + '/status')
     }
 }
