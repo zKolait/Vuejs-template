@@ -1,15 +1,16 @@
+// Imports
 import Vue from 'vue'
 import Vuex from 'vuex'
-import authModule from './auth'
-import gameModule from './game'
-import serverModule from './server'
 
+// Import vuex modules
+import authModule from './auth'
+
+// Use vuex
 Vue.use(Vuex)
 
+// Load vuex modules
 export default new Vuex.Store({
     modules: {
-        auth: authModule,
-        game: gameModule,
-        server: serverModule,
+        auth: authModule
     }
 })

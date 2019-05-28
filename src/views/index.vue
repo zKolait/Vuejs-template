@@ -7,7 +7,6 @@ export default {
     name: 'home',
     data () {
         return {
-            test: 0
         }
     },
     mounted () {
