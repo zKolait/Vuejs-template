@@ -1,9 +1,6 @@
 <template>
     <div>
-        <header>
-            <h1>Je suis le header default</h1>
-        </header>
-        <slot />
+        <div>Loading...</div>
     </div>
 </template>
 

@@ -20,28 +20,27 @@ const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: { layout: 'landing' }
     },
     {
       path: '/login',
       name: 'login',
-      component: Login
+      component: Login,
+      meta: { layout: 'landing' }
     },
     {
       path: '/register',
       name: 'register',
-      component: Register
+      component: Register,
+      meta: { layout: 'landing' }
     },
     {
       path: '/admin',
       name: 'admin',
+      beforeEnter: authMiddleware,
+      component: Admin,
       meta: { layout: 'admin' },
-      // Page with middleware
-      beforeEnter: (to, from, next) => {
-        authMiddleware(to, from, next)
-        next()
-      },
-      component: Admin
     }
   ]
 })
